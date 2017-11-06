@@ -10,7 +10,7 @@ addons:
         packages:
             - gcc-multilib
             - g++-multilib
-            - libstdc++6:i386
+            - libstdc++6:i386 
             - libgcc1:i386
             - zlib1g:i386
             - libncurses5:i386
@@ -47,10 +47,9 @@ script:
     - sbt native-build android:package-release
 
 deploy:
-  provider: releases 
-  user: "plexpt"
-  password: "a88073597"
+  provider: releases  
   file: "/home/travis/build/PlexPt/shadowsocksr-android-with-patches/target/android/output/shadowsocksr-release.apk"
+  api_key:"077fdaf7b955b72cd6644b1f7ff373f1d47ed286"
   skip_cleanup: true
 
  
