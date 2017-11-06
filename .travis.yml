@@ -51,5 +51,9 @@ deploy:
   file: "/home/travis/build/PlexPt/shadowsocksr-android-with-patches/target/android/output/shadowsocksr-release.apk"
   api_key:"077fdaf7b955b72cd6644b1f7ff373f1d47ed286"
   skip_cleanup: true
+before_install:
+- gem install fir-cli
+after_deploy:
+- fir p /home/travis/build/PlexPt/shadowsocksr-android-with-patches/target/android/output/shadowsocksr-release.apk -T $FIR_TOKEN -c "`git cat-file tag $TRAVIS_TAG`"  
 
  
