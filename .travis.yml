@@ -50,7 +50,6 @@ deploy:
   provider: releases 
   file: "/home/travis/build/PlexPt/shadowsocksr-android-with-patches/target/android/output/shadowsocksr-release.apk"
   skip_cleanup: true
-  api-key:
-     secure: "72bbc77259d7511f939a47460fc3a6c60514e0f3 "
-  on:
+  api-key:"72bbc77259d7511f939a47460fc3a6c60514e0f3 "
+
  
