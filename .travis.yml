@@ -49,7 +49,7 @@ script:
 deploy:
   provider: releases  
   file: "/home/travis/build/PlexPt/shadowsocksr-android-with-patches/target/android/output/shadowsocksr-release.apk"
-  api_key:"077fdaf7b955b72cd6644b1f7ff373f1d47ed286"
+  api_key: "077fdaf7b955b72cd6644b1f7ff373f1d47ed286"
   skip_cleanup: true
 before_install:
 - gem install fir-cli
